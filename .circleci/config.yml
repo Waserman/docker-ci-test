@@ -19,4 +19,4 @@ jobs:
             - ./node_modules
       - run: # run tests
           name: test
-          command: mocha test
+          command: npm run test
