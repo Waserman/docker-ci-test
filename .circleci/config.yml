@@ -20,6 +20,19 @@ jobs:
       - run: # run tests
           name: test
           command: npm run test
+  deploy:
+    dockerhub:
+      branch: master
+      command: $DOCKER_HUB_TRIGGER
+      
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
 general:
   branches:
     only:
