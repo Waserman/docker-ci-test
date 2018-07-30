@@ -1,7 +1,5 @@
 FROM centos:centos7
 
-LABEL MAINTAINER=nigelpoulton@hotmail.com
-
 # Install Node etc...
 RUN yum -y update; yum clean all
 RUN yum -y install epel-release; yum clean all
