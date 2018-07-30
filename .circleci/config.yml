@@ -24,9 +24,7 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run:
-        name: trigger-dockerhub-build
-        command: bash -c '$DOCKER_HUB_TRIGGER'
+      - run: $DOCKER_HUB_TRIGGERs
 
 workflows:
   version: 2
