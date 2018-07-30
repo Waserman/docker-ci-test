@@ -20,3 +20,7 @@ jobs:
       - run: # run tests
           name: test
           command: npm run test
+general:
+  branches:
+    only:
+      - master # list of branches to build
