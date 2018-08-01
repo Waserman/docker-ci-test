@@ -24,7 +24,7 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: $DOCKER_CLOUD_TRIGGER
+      - run: $DOCKER_HUB_TRIGGER
 
 workflows:
   version: 2
